@@ -9,17 +9,7 @@ using namespace std;
 #define CLR(a) memset((a), 0 ,sizeof(a))
 #define NCLR(a) memset((a), -1 ,sizeof(a))
 
-typedef vector<int> VI;
-typedef vector<VI> VVI;
-typedef vector<string> VS;
-typedef pair<int, int> PII;
 typedef long long LL;
-typedef vector<LL> VLL;
-typedef vector<VLL> VVLL;
-typedef unsigned int uint;
-typedef unsigned long long ull;
-typedef priority_queue<int> maxpq;
-typedef priority_queue< int, vector<int>, greater<int> > minpq;
 
 static const double EPS = 1e-10;
 static const double PI = acos( -1.0 );

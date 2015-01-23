@@ -20,13 +20,13 @@ struct EllysNumberGuessing
             _array.push_back(guesses[i] - answers[i]);
         }
         SORT(_array);
-        int ans = -1;
+        int ans = -2;
         for (int i = 0; i < _array.size(); ++i)
         {
             int cnt = upper_bound(_array.begin(), _array.end(), _array[i]) - lower_bound(_array.begin(), _array.end(), _array[i]);
             if(cnt == guesses.size()){
-                if(ans != -1){
-                    return -2;
+                if(ans != -2){
+                    return -1;
                 }
                 ans = guesses[i];
                 i += cnt - 1;
